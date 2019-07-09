@@ -1,0 +1,35 @@
+{
+    "dependencies": {
+        "@babel/core": "^7.5.0",
+        "@babel/preset-env": "^7.5.0",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^8.0.6",
+        "babel-plugin-component": "^1.1.1",
+        "babel-preset-env": "^1.7.0",
+        "bootstrap": "3.3.7",
+        "css-loader": "^3.0.0",
+        "file-loader": "^4.0.0",
+        "html-webpack-plugin": "^3.2.0",
+        "image-webpack-loader": "^5.0.0",
+        "mint-ui": "^2.2.13",
+        "style-loader": "^0.23.1",
+        "url-loader": "^2.0.1",
+        "vue": "^2.6.10",
+        "vue-loader": "^15.7.0",
+        "vue-router": "^3.0.7",
+        "vue-template-compiler": "^2.6.10",
+        "webpack": "^4.35.2",
+        "webpack-cli": "^3.3.5",
+        "webpack-dev-server": "^3.7.2"
+    },
+    "name": "mintV",
+    "version": "1.0.0",
+    "main": "main.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "npx webpack",
+        "start:dev": "webpack-dev-server"
+    },
+    "repository": "https://github.com/zhaiqun/VuePro.git",
+    "author": "zhaiqun"
+}
