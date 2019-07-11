@@ -34,6 +34,6 @@
         "build": "npx webpack",
         "start:dev": "webpack-dev-server"
     },
-    "repository": "https://github.com/zhaiqun/VuePro.git",
+    "repository": "git@github.com:zhaiqun/VuePro.git",
     "author": "zhaiqun"
 }
