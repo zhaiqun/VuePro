@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 module.exports = {
+    mode: 'development',
     entry: './src/main.js',
     output: {
         filename: 'bundle.js',
@@ -14,6 +15,7 @@ module.exports = {
         port: 9000,
         // open: 'Google Chrome'
     },
+    // devtools: '#eval-source-map',
     module: {
         rules: [{
                 test: /\.css$/,
@@ -75,7 +77,16 @@ module.exports = {
 
 
             },
-
+            {
+                test: /\.scss$/,
+                use: [{
+                    loader: "style-loader"
+                }, {
+                    loader: "css-loader"
+                }, {
+                    loader: "sass-loader"
+                }]
+            }
 
         ]
     },
