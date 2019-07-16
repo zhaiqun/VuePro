@@ -1,0 +1,356 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.jd_containner {
+    min-width: 320px;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* 顶部搜索栏 */
+
+.jd_search {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+}
+
+.jd_search_box {
+    min-width: 320px;
+    max-width: 640px;
+    /* width: 100%; */
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.jd_search form {
+    /* width: 100%; */
+    padding: 0 40px 0 60px;
+}
+
+.jd_search .jd_search_input {
+    margin-top: 5px;
+    height: 30px;
+    width: 100%;
+    border-radius: 20px;
+    display: inline-block;
+    padding-left: 40px;
+    color: #eee;
+}
+
+.jd_search .icon_search {
+    background-position: -60px -110px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 70px;
+    top: 10px;
+}
+
+.jd_search .jd_login {
+    position: absolute;
+    right: 0;
+    line-height: 40px;
+    height: 40px;
+    top: 0px;
+    width: 40px;
+    color: #fff;
+}
+
+.jd_search .icon_logo {
+    position: absolute;
+    left: 0;
+    height: 36px;
+    width: 60px;
+    background-position: 0 -103px;
+    top: 2px;
+    text-indent: -1000px;
+}
+
+
+/* banner轮播图 */
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner ul:first-child {
+    width: 1000%;
+    transform: translateX(-10%)
+}
+
+.banner ul:first-child li {
+    float: left;
+    width: 10%;
+}
+
+.banner ul:first-child img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.banner ul:last-child {
+    position: absolute;
+    width: 120px;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.banner ul:last-child li {
+    float: left;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px
+}
+
+.banner ul:last-child li.active {
+    background-color: #fff;
+}
+
+.banner ul:last-child li:last-child {
+    margin-right: 0;
+}
+
+
+/*产品目录productCaralog*/
+
+.jd_productCatalog {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.jd_productCatalog ul li {
+    width: 25%;
+    float: left;
+    /* height: 80px; */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.jd_productCatalog ul li img {
+    /* transform: scale(0.5); */
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+}
+
+.jd_productCatalog ul li p {
+    padding-top: 5px;
+    font-size: 12px;
+    color: #666;
+}
+
+.jd_product {}
+
+
+/* 促销产品目录 */
+
+.saleProduct {
+    width: 100%;
+    margin-top: 8px;
+    padding: 5px 0;
+    /* border: 1px solid #eee; */
+    box-shadow: 0 0 2px #ccc;
+    background: #fff;
+}
+
+.saleProduct .caption {
+    height: 30px;
+    padding: 5px 35px;
+    position: relative;
+}
+
+.saleProduct .caption .iconClock {
+    position: absolute;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: url('../../../images/JDm/seckill-icon.png') no-repeat center/ 16px 20px;
+    top: 5px;
+}
+
+.saleProduct span:first-of-type {
+    color: #d8505c;
+    float: left;
+}
+
+.saleProduct .timer {
+    float: left;
+    margin-left: 10px;
+}
+
+.saleProduct .timer span {
+    background: #000;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    float: left;
+    margin-left: 5px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.saleProduct .timer span:nth-child(3n) {
+    width: 5px;
+    background: #fff;
+    color: #666;
+}
+
+.saleProduct .caption a {
+    position: absolute;
+    right: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+.saleProduct .saleProDetail {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.saleProduct .saleProDetail li {
+    width: 33.33%;
+    float: left;
+    padding: 0 35px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+}
+
+.saleProduct .saleProDetail li:last-child {
+    border: none;
+}
+
+.saleProduct .saleProDetail img {
+    width: 100%;
+    display: block;
+}
+
+.saleProduct .saleProDetail .nowPrice {
+    color: #d8505c;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.saleProduct .saleProDetail .originalPrice {
+    color: #666;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+
+/* 京东超市 */
+
+.market {
+    margin-top: 10px;
+    box-shadow: 0 0 2px #ccc;
+    overflow: hidden;
+    background: #fff;
+}
+
+.market img {
+    display: block;
+    width: 100%;
+}
+
+.market .marketTitle {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    position: relative;
+}
+
+.market .marketTitle h3 {
+    font-weight: normal;
+}
+
+.market .marketTitle::before {
+    position: absolute;
+    content: "|";
+    color: #d8505c;
+    left: 5px;
+    font-weight: bolder;
+}
+
+
+/* 京东自营 */
+
+.Jd_seft {
+    margin-top: 10px;
+    box-shadow: 0 0 2px #ccc;
+    overflow: hidden;
+    background: #fff;
+}
+
+.Jd_seft img {
+    display: block;
+    width: 100%;
+}
+
+.Jd_seft .seftTitle {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    position: relative;
+}
+
+.Jd_seft .seftTitle h3 {
+    font-weight: normal;
+}
+
+.Jd_seft .seftTitle::before {
+    position: absolute;
+    content: "|";
+    color: #d8505c;
+    left: 5px;
+    font-weight: bolder;
+}
+
+
+/* 京东热门 */
+
+.Jd_hot {
+    margin-top: 10px;
+    box-shadow: 0 0 2px #ccc;
+    overflow: hidden;
+    background: #fff;
+}
+
+.Jd_hot img {
+    display: block;
+    width: 100%;
+}
+
+.Jd_hot .hotTitle {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    position: relative;
+}
+
+.Jd_hot .hotTitle h3 {
+    font-weight: normal;
+}
+
+.Jd_hot .hotTitle::before {
+    position: absolute;
+    content: "|";
+    color: #d8505c;
+    left: 5px;
+    font-weight: bolder;
+}

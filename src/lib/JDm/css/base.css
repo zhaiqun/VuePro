@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    -webkit-appearance: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+[class^="icon_"],
+[class*="icore_"] {
+    background-image: url('../../../images/JDm/sprites.png');
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.bb {
+    border-bottom: 1px solid #ddd;
+}
+
+.br {
+    border-right: 1px solid #ddd;
+}
+
+.bt {
+    border-top: 1px solid #ddd;
+}
+
+.bl {
+    border-left: 1px solid #ddd;
+}
+
+.w_50 {
+    width: 50%;
+}
+
+.clearfix::after {
+    content: "";
+    border: none;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    display: block;
+}

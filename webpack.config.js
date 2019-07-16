@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const webpack = require('webpack')
 module.exports = {
     mode: 'development',
     entry: './src/main.js',
@@ -18,6 +19,15 @@ module.exports = {
     // devtools: '#eval-source-map',
     module: {
         rules: [{
+                test: require.resolve('jquery'),
+                use: [{
+                    loader: 'expose-loader',
+                    options: 'jQuery'
+                }, {
+                    loader: 'expose-loader',
+                    options: '$'
+                }]
+            }, {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
             },
@@ -80,11 +90,14 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [{
-                    loader: "style-loader"
+                    loader: "style-loader",
+                    options: { sourceMap: true }
                 }, {
-                    loader: "css-loader"
+                    loader: "css-loader",
+                    options: { sourceMap: true }
                 }, {
-                    loader: "sass-loader"
+                    loader: "sass-loader",
+                    options: { sourceMap: true }
                 }]
             }
 
@@ -102,6 +115,13 @@ module.exports = {
             }
         }),
         new VueLoaderPlugin(),
+        // new webpack.ProvidePlugin({
+
+        //     $: "jquery",
+
+        //     jQuery: "jquery"
+
+        // })
 
     ],
     // resolve: {
