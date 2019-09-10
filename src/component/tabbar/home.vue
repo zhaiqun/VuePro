@@ -29,7 +29,12 @@
 		           
 		        </ul>
   
-   <br>   <br>   <br>   <br>
+<a  download="http://localhost:3000/dist/1.jpg"  href="http://localhost:3000/dist/1.jpg">不同源下载</a>
+
+<a  download="http://192.168.199.179:9000/publickTest/images/1.jpg"
+href="http://192.168.199.179:9000/publickTest/images/1.jpg"
+
+>同源下载</a>
     </div>
 </template> 
 
